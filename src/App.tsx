@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { CFormCheck } from '@coreui/react'
+import { HashRouter} from 'react-router-dom'
+import { CSpinner } from '@coreui/react'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="pt-3 text-center">
+        <CSpinner color="primary" variant="grow" />
+      </div>
+    // <HashRouter>
+    //   <div className="pt-3 text-center">
+    //     <CSpinner color="primary" variant="grow" />
+    //   </div>
+    // <div className="App">
+    //    <CFormCheck id="flexCheckDefault" label="Default checkbox" />
+    //    <CFormCheck id="flexCheckChecked" label="Checked checkbox" defaultChecked />
+    //   test
+    // </div>
+    // </HashRouter>
   );
 }
 
