@@ -1,12 +1,18 @@
-import { CFormCheck } from '@coreui/react'
-import { HashRouter} from 'react-router-dom'
-import { CSpinner } from '@coreui/react'
+import { HashRouter,Routes,Route} from 'react-router-dom'
+import DefaultLayout from './components/DefaultLayout'
 
-function App () {
+const App = () => {
   return (
-      <div className="pt-3 text-center">
-        <CSpinner color="primary" variant="grow" />
-      </div>
+    <HashRouter>
+         <Routes>
+         <Route path="*"  element={<DefaultLayout />} />
+
+        </Routes>
+    </HashRouter>
+ 
+      // <div className="pt-3 text-center">
+      //   <CSpinner color="primary" variant="grow" />
+      // </div>
     // <HashRouter>
     //   <div className="pt-3 text-center">
     //     <CSpinner color="primary" variant="grow" />
